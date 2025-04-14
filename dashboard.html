@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit Market Dashboard</title>
+  <link rel="stylesheet" href="fruits.css">
+</head>
+<body>
+  <h1>Welcome to the Fruit Market</h1>
+  <button onclick="logout()" class="btn" style="background-color: #e53e3e;">Logout</button>
+
+  
+  <h2>🍇 Fruit List</h2>
+  <ul id="fruit-list"></ul>
+
+  <h2>🔍 Check Fruit Availability</h2>
+  <input type="text" id="fruit-check" placeholder="Enter fruit name to check">
+  <button onclick="checkFruit()" class="btn">Check Fruit</button>
+  <p id="check-result"></p>
+
+  <h2>🧾 Create an Order</h2>
+  <div id="order-form"></div>
+  <button onclick="calculateTotal()" class="btn">Get Total Price</button>
+  <p id="total"></p>
+
+  <script src="fruitmrkt.js"></script>
+</body>
+</html>
